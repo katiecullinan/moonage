@@ -1,0 +1,512 @@
+/*! HTML5 Boilerplate v7.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 1.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #222;
+    height: 100%;
+    font-size: 1em;
+    line-height: 1.4;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+
+}
+
+.full-height {
+ height: 100%;
+ padding: 10px 10px 100px 10px;
+ background: #222;
+ background-size: cover;
+ background: #222222;
+ background-repeat: no-repeat;
+ background-image: linear-gradient(308deg, rgba(212,222,37,.2) 0%, rgba(130,45,25,.2) 100%);
+
+ background-size: cover;
+
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+    background: black;
+
+}
+
+
+
+.icon img {
+  width: 40px;
+  position: absolute;
+  padding: 10px;
+  right: 0;
+  top: 0;
+}
+
+.icon img:hover {
+  opacity: .5;
+}
+
+
+.logo {
+  width: 50%;
+  display: block;
+
+}
+
+.logo img {width: 100%}
+
+
+.intro {
+  width: 20%;
+  display: block;
+  position: absolute;
+  padding: 10px;
+  right: 0;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 12px;
+  /*background-color: #4D1E03;*/
+  line-height: 2em;
+  margin-left: 20px;
+  margin-top: 20px;
+
+}
+
+.abouttext {
+  font-family: titling-gothic-fb-extended, sans-serif;
+  font-weight: 400;
+  color: white;
+  margin:auto;
+  font-size: 20px;
+  padding: 40px 20px 20px 200px;
+
+line-height: 2em;
+
+
+}
+
+.video {
+
+  padding-top: 10px;
+}
+
+
+.time, .address {
+  font-family: titling-gothic-fb-extended, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+  margin:auto;
+  font-size: 12px;
+  padding-left: 20%;
+  padding-top: 100px;
+  padding-right: 20px;
+}
+
+.address {
+  padding-top: 20px;
+}
+
+.vertical1 {
+  width: 1%;
+  display: block;
+  position: absolute;
+
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.vertical2{
+  width: 1%;
+  display: block;
+  right:0;
+  position: absolute;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 12px;
+  padding: 10px;
+
+}
+
+.foodhover {
+  max-width: 700px;
+  height: 408px;
+ background-image: url("beefandveg.jpg");
+ display: block;
+ position: relative;
+ padding: 10px 10px 0 10px;
+
+ background-size: cover;
+}
+
+.foodhover:hover {
+  background-image: url("beefandveg.gif");
+  background-size: cover;
+}
+
+.food1 img{ width: 70%;}
+
+.food2 img{ width: 50%;}
+
+.food3 img{ width: 70%;}
+
+.food4 img{ width: 50%;}
+
+.food5 img{ width: 70%;}
+
+
+.food {
+
+  display: block;
+}
+
+
+.food1, .food3, .food5 {
+  display: block;
+  position: relative;
+  padding: 10px 10px 0 10px;
+  margin: 20% 0 0 35%;
+
+}
+
+.food2, .food4 {
+  display: block;
+  position: relative;
+  margin: 20% 0 0 15%;
+  padding: 10px;
+}
+
+.food1 h1{
+  position: absolute;
+  bottom: 0;
+
+}
+
+.food2 h1{
+  position: absolute;
+  top: 0;
+
+}
+
+.food3 h1{
+  position: absolute;
+  bottom: 0;
+  padding-right:10px;
+}
+
+.food4 h1{
+  position: absolute;
+  top: 0;
+}
+
+.food5 h1{
+  position: absolute;
+  bottom: 0;
+    padding-right:10px;
+}
+
+
+
+
+
+
+
+
+.footer {
+  padding: 10px 10px 10px 10px;
+  display: block;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 12px;
+  background: rgba(212,222,37,.1)
+
+}
+
+
+h1 {
+  font-family: titling-gothic-fb-wide, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: white;
+  padding: 0 0 0 25%;
+}
+
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+
+ /* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+ .hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
+
+/*
+* Extends the .visuallyhidden class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+   @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+   @media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
